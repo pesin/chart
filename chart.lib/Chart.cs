@@ -9,6 +9,12 @@ namespace chart.lib
 {
     public  class Chart
     {
+
+        public Chart()
+        {
+
+            this.Rows = new List<ChartRow>();
+        }
         [Key]
         public int ID { get; set; }
 

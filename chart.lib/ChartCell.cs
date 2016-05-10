@@ -10,9 +10,10 @@ namespace chart.lib
     public  class ChartCell
     {
         [Key]
-        public int Id { get; private set; }
+        public int Id { get;  set; }
 
         [Required]
-        public Stitch Stitch { get; private set; }
+        [EnumDataType(typeof(Stitch))]
+        public Stitch Stitch { get;  set; }
     }
 }
