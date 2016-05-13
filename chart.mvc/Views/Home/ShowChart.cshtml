@@ -4,5 +4,33 @@
     ViewBag.Title = "Show Chart";
 }
 
-<h2>Chart</h2>
 
+
+@section scripts{
+
+}
+
+<h2>@Model.Name Chart </h2>
+<p></p>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">@Model.Description</h3>
+    </div>
+
+    <div class="panel-body">
+
+        <div class="chart">
+            @{
+                int cnt = Model.Rows.Count;
+                //displaying the chart top-to-bottom
+                for (int i = cnt - 1; i >= 0; i--)
+                {
+                    @Html.DisplayFor(model => model.Rows[i])
+
+                }
+            }
+        </div>
+        </div></div>
+        <div>
+            <p>v1 - plain and simple</p>
+        </div>

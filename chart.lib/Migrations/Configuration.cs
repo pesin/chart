@@ -40,18 +40,18 @@ namespace chart.lib.Migrations
 
             var r1 = new ChartRow()
             {
-                ID = 1,
+               
+                RowNumber=1,
                 Side = Side.RS
             };
 
             r1.Cells.Add(new ChartCell()
             {
-                Id = 2,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 1,
                 Stitch = Stitch.Purl
             });
 
@@ -59,19 +59,19 @@ namespace chart.lib.Migrations
             {
                 r1.Cells.Add(new ChartCell()
                 {
-                    Id = i + 3,
+                  
                     Stitch = Stitch.Cable8_slip2b_k1_p1slip_k1slip_p1slip_slip1f_k1p1k1_k1slip
                 });
 
             }
             r1.Cells.Add(new ChartCell()
             {
-                Id = 11,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 12,
+               
                 Stitch = Stitch.Purl
             });
 
@@ -80,87 +80,97 @@ namespace chart.lib.Migrations
             //row 2
             r1 = new ChartRow()
             {
-                ID = 2,
+              
+                RowNumber=2,
                 Side = Side.WS
             };
             r1.Cells.Add(new ChartCell()
             {
-                Id = 1,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 2,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 3,
+               
                 Stitch = Stitch.Knit
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 4,
+               
                 Stitch = Stitch.Knit
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 5,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 6,
+               
                 Stitch = Stitch.Knit
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 7,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 8,
+               
                 Stitch = Stitch.Knit
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 9,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 10,
+                
                 Stitch = Stitch.Knit
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 11,
+               
                 Stitch = Stitch.Purl
             });
             r1.Cells.Add(new ChartCell()
             {
-                Id = 12,
+                
                 Stitch = Stitch.Purl
             });
 
+            c.Rows.Add(r1);
+            r1.RowNumber = 3;
+            r1.Side = Side.RS;
+            c.Rows.Add(r1);
+            r1.RowNumber = 4;
+            r1.Side = Side.WS;
+            c.Rows.Add(r1);
+            context.Charts.AddOrUpdate(c);
 
-            //row 3
-            r1 = new ChartRow()
-            {
-                ID = 3,
-                Side = Side.RS
-            };
-            r1.Cells.Add(new ChartCell()
-            {
-                Id = 1,
-                Stitch = Stitch.Purl
-            });
-            r1.Cells.Add(new ChartCell()
-            {
-                Id = 2,
-                Stitch = Stitch.Purl
-            });
+            ////row 3
+            //r1 = new ChartRow()
+            //{
+            //    ID = 3,
+            //    Side = Side.RS,
+            //    RowNumber=3
+            //};
+            //r1.Cells.Add(new ChartCell()
+            //{
+            //    Id = 1,
+            //    Stitch = Stitch.Purl
+            //});
+            //r1.Cells.Add(new ChartCell()
+            //{
+            //    Id = 2,
+            //    Stitch = Stitch.Purl
+            //});
         }
     }
 }

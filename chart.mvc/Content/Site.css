@@ -22,3 +22,21 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.chart{
+    display:block;
+    border:1px dashed #808080;
+    clear:both;
+    float:left;
+}
+.chartrow{
+    display:block;
+    float:left;
+    clear:both;
+
+}
+
+.chartcell{
+    display:inline-block;
+    float:left;
+}

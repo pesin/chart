@@ -1,0 +1,10 @@
+﻿@model chart.lib.ChartRow
+<!--let's just switch to divs, eh?-->
+<div class="chartrow">
+    @for (int j = Model.Cells.Count - 1; j >= 0; j--)
+    {
+        @Html.DisplayFor(model=>model.Cells[j])
+    }
+    
+
+</div>

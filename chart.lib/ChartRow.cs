@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace chart.lib
 {
@@ -17,7 +18,9 @@ namespace chart.lib
         }
 
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set;}
+        public int RowNumber { get; set; }
         public virtual IList<ChartCell> Cells { get; set; }
 
         [Required]
