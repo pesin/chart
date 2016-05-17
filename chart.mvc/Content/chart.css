@@ -1,0 +1,49 @@
+﻿
+.chart{
+    display:block;
+    border:1px dashed #808080;
+    clear:both;
+    float:left;
+}
+.chartrow{
+    display:block;
+    float:left;
+    clear:both;
+
+}
+
+.chartcell{
+    display:inline-block;
+    float:left;
+    width:24px;
+    height:24px;
+     background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+.circle{
+    background-image:url(../images/png/circle.png);
+}
+.circle1{
+    background-image:url(../images/png/circle-1.png);
+}
+.cut{
+    background-image:url(../images/png/cut.png);
+}
+.line{
+    background-image:url(../images/png/line.png);
+}
+.k2{
+    background-image:url(../images/png/k2.png);
+}
+
+.p{
+    background-image:url(../images/png/square-2.png);
+}
+
+.k{
+    background-image:url(../images/png/square-5.png);
+}
+
+.yo{
+    background-image:url(../images/png/shapes-5.png);
+}

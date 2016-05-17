@@ -197,10 +197,28 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\chart.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\png\circle-1.png" />
+    <Content Include="images\png\circle.png" />
+    <Content Include="images\png\cut.png" />
+    <Content Include="images\png\line.png" />
+    <Content Include="images\png\shape.png" />
+    <Content Include="images\png\k2.png" />
+    <Content Include="images\png\shapes-2.png" />
+    <Content Include="images\png\shapes-3.png" />
+    <Content Include="images\png\shapes-4.png" />
+    <Content Include="images\png\shapes-5.png" />
+    <Content Include="images\png\shapes.png" />
+    <Content Include="images\png\square-1.png" />
+    <Content Include="images\png\square-2.png" />
+    <Content Include="images\png\square-3.png" />
+    <Content Include="images\png\square-4.png" />
+    <Content Include="images\png\square-5.png" />
+    <Content Include="images\png\square.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
@@ -289,7 +307,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52346</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52346/</IISUrl>
+          <IISUrl>http://localhost/chart</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/chart</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

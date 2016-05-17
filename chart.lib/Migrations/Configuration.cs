@@ -33,7 +33,7 @@ namespace chart.lib.Migrations
             {
                 ID = 1,
                 Name = "No.1",
-                Description = "testing chart aidez seed wishbone"
+                Description = "testing chart "
             };
 
             int i;
@@ -60,7 +60,7 @@ namespace chart.lib.Migrations
                 r1.Cells.Add(new ChartCell()
                 {
                   
-                    Stitch = Stitch.Cable8_slip2b_k1_p1slip_k1slip_p1slip_slip1f_k1p1k1_k1slip
+                    Stitch = Stitch.Purl
                 });
 
             }
@@ -151,6 +151,9 @@ namespace chart.lib.Migrations
             c.Rows.Add(r1);
             r1.RowNumber = 4;
             r1.Side = Side.WS;
+            c.Rows.Add(r1);
+            r1.RowNumber = 5;
+            r1.Side = Side.RS;
             c.Rows.Add(r1);
             context.Charts.AddOrUpdate(c);
 
