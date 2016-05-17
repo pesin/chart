@@ -17,6 +17,23 @@ namespace chart.lib
             this.Cells = new List<ChartCell>();
         }
 
+
+        public ChartRow(string[] list):this()
+        {
+            if (list!=null && list.Length > 0)
+            {
+                for(int j = list.Length - 1; j >= 0; j--)
+                {
+                    ChartCell c = new ChartCell()
+                    {
+                        Stitch = Parser.String2Stitch(list[j])
+                    };
+                    this.Cells.Add(c);
+
+                }
+            }
+        }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set;}

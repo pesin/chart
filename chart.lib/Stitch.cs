@@ -10,6 +10,8 @@ namespace chart.lib
     //but let's see
     public enum Stitch
     {
+        Whaaaat=-1,
+     
         Knit=0,
         Purl,
         /*YarnOver,

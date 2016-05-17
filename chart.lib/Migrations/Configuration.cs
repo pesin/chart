@@ -26,10 +26,10 @@ namespace chart.lib.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            Chart c;
+           
 
-
-
-            Chart c = new Chart()
+             c = new Chart()
             {
                 ID = 1,
                 Name = "No.1",
@@ -146,12 +146,17 @@ namespace chart.lib.Migrations
             });
 
             c.Rows.Add(r1);
+
+
+            r1 = new ChartRow(new string[] { "k", "k", "p", "p", "k", "p", "p", "k", "k", "p", "k", "k" });
             r1.RowNumber = 3;
             r1.Side = Side.RS;
             c.Rows.Add(r1);
+            r1 = new ChartRow(new string[] { "k", "k", "p", "p", "k", "p", "p", "k", "k", "p", "k", "k" });
             r1.RowNumber = 4;
             r1.Side = Side.WS;
             c.Rows.Add(r1);
+            r1 = new ChartRow(new string[] { "k", "k", "p", "p", "k", "p", "p", "k", "k", "p", "k", "k" });
             r1.RowNumber = 5;
             r1.Side = Side.RS;
             c.Rows.Add(r1);
