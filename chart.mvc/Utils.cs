@@ -12,13 +12,13 @@ namespace chart.mvc
         public static String GetStitchIcon(Stitch stitch)
         {
             String icon = "unchecked";
-            switch (stitch)
+            switch (stitch.StitchType)
             {
-                case Stitch.Knit:
-                    icon = "k";
+                case StitchType.Basic:
+                    icon = (stitch.ReverseIndicator?"p": "k");
                     break;
-                case Stitch.Purl:
-                    icon = "p";
+                case StitchType.YarnOver:
+                    icon = "o";
                     break;
               
                

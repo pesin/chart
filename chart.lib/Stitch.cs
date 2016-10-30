@@ -1,23 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace chart.lib
 {
-    //i'm already not quite sure about this implementation
-    //but let's see
-    public enum Stitch
+  
+    /// <summary>
+    /// One stich
+    /// </summary>
+    public class Stitch
     {
-        Whaaaat=-1,
-     
-        Knit=0,
-        Purl,
-        /*YarnOver,
-        Ktog,
-        Ptog,
-        Kcable,
-        Pcable*/
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int StichId { get; set; }
+
+        [EnumDataType(typeof(StitchType))]
+        public StitchType StitchType { get; set; }
+
+        public bool ReverseIndicator { get; set; }
+
+        [Range(1, Int32.MaxValue)]
+        public int BaseStiches { get; set; }
+
+        [Range(1, Int32.MaxValue)]
+        public int MadeStitches { get; set; }
+        public bool SlipLeftSideLoop { get; set; }
+
+        public Stitch()
+        {
+            this.BaseStiches = 1;
+            this.MadeStitches = 1;
+            this.ReverseIndicator = false;
+            this.SlipLeftSideLoop = true;
+        }
     }
+
+   
 }

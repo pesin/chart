@@ -47,12 +47,12 @@ namespace chart.lib.Migrations
 
             r1.Cells.Add(new ChartCell()
             {
-               
-                Stitch = Stitch.Purl
+
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
 
             for (i = 0; i < 8; i++)
@@ -60,19 +60,19 @@ namespace chart.lib.Migrations
                 r1.Cells.Add(new ChartCell()
                 {
                   
-                    Stitch = Stitch.Purl
+                    Stitch = StitchFactory.getPurl()
                 });
 
             }
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
 
             c.Rows.Add(r1);
@@ -87,62 +87,62 @@ namespace chart.lib.Migrations
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Knit
+                Stitch = StitchFactory.getKnit()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Knit
+                Stitch = StitchFactory.getKnit()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Knit
+                Stitch = StitchFactory.getKnit()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Knit
+                Stitch = StitchFactory.getKnit()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
                 
-                Stitch = Stitch.Knit
+                Stitch = StitchFactory.getKnit()
             });
             r1.Cells.Add(new ChartCell()
             {
                
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
             r1.Cells.Add(new ChartCell()
             {
                 
-                Stitch = Stitch.Purl
+                Stitch = StitchFactory.getPurl()
             });
 
             c.Rows.Add(r1);

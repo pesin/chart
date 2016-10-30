@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace chart.lib
 {
-    
+
     /// <summary>
     /// A  single cell or block of cells (horizontal)
     /// </summary>
-    public  class ChartCell
+    public class ChartCell
     {
         public ChartCell()
         {
-            BlockSize = 1;
+
         }
 
         /// <summary>
@@ -24,21 +24,15 @@ namespace chart.lib
         /// </summary>
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public virtual int Id { get;  set; }
+        public virtual int Id { get; set; }
 
         /// <summary>
         /// Stitch type
         /// </summary>
         [Required]
-        [EnumDataType(typeof(Stitch))]
-        public virtual Stitch Stitch { get;  set; }
+        public virtual Stitch Stitch { get; set; }
 
 
-        /// <summary>
-        /// Number of stitches in this block
-        /// </summary>
-        [Required]
-        [Range(1,Int32.MaxValue)]
-        public virtual int BlockSize { get; set; }
+
     }
 }

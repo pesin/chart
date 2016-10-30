@@ -15,29 +15,20 @@ namespace chart.lib
         {
             if (str.Equals("k"))
             {
-                return Stitch.Knit;
+                return StitchFactory.getKnit();
 
             }
             if (str.Equals("p"))
             {
-                return Stitch.Purl;
+                return StitchFactory.getPurl();
 
             }
 
-            try
+            return new Stitch()
             {
-                Stitch stitchValue = (Stitch)Enum.Parse(typeof(Stitch), str);
-                if (Enum.IsDefined(typeof(Stitch), stitchValue))
-                {
-                    return stitchValue;
-                }
-              
-            }
-            catch (ArgumentException)
-            {
-                //unknown stitch
-            }
-            return Stitch.Whaaaat;
+                StitchType=StitchType.Whaaaat,
+
+            };
         }
     }
 }
